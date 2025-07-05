@@ -1,0 +1,146 @@
+:root {
+    --acc-height: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordionGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    max-width: 60em;
+}
+
+.accordion {
+    margin: 0;
+    padding: 0;
+    border: 1px solid hsl(0deg 0% 52%);
+    border-radius: 7px;
+    min-width: 100%;
+}
+
+.accordion h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.accordion h3 button {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* .accordion:focus-within {
+    border-color: hsl(216deg 94% 43%);
+} */
+
+.accordion:focus-within h3 {
+    background-color: hsl(0deg 0% 97%);
+}
+
+.accordion>*+* {
+    border-top: 1px solid hsl(0deg 0% 52%);
+}
+
+.accordion-trigger {
+    background: none;
+    color: hsl(0deg 0% 13%);
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 1em 1.5em;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    outline: none;
+    border: 0;
+    margin-right: 2em;
+
+}
+
+.accordion-trigger:focus,
+.accordion-trigger:hover {
+    background: hsl(216deg 94% 94%);
+    border: 1px solid;
+    border-color: hsl(216deg 94% 43%);
+
+}
+
+.accordion-trigger:focus {
+    outline: 4px solid transparent;
+}
+
+.accordion>*:first-child .accordion-trigger,
+.accordion>*:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.accordion>*:last-child .accordion-trigger,
+.accordion>*:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.accordion button::-moz-focus-inner {
+    border: 0;
+}
+
+.accordion-title {
+    display: block;
+    pointer-events: none;
+    border: transparent 2px solid;
+    border-radius: 5px;
+    padding: 0.25em;
+    outline: none;
+}
+
+
+
+.accordion-icon {
+    border: solid currentcolor;
+    border-width: 0 2px 2px 0;
+    height: 0.5rem;
+    pointer-events: none;
+    position: absolute;
+    right: 2em;
+    top: 50%;
+    transform: translateY(-60%) rotate(45deg);
+    width: 0.5rem;
+    transition: all 500ms ease;
+}
+
+.accordion-trigger:focus .accordion-icon,
+.accordion-trigger:hover .accordion-icon {
+    border-color: hsl(216deg 94% 43%);
+}
+
+
+.accordion-trigger[aria-expanded="true"] .accordion-icon {
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+.accordion-panel {
+    margin: 0;
+    padding: 1em 1.5em;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 500ms ease-in;
+}
+
+.accordion-panel.open {
+    /* max-height: 100vh; */
+    max-height: var(--acc-height);
+    transition: all 600ms ease;
+
+}
+
+/* .accordion-panel[hidden] {
+    height: 0;
+
+} */
