@@ -2,7 +2,9 @@
 
 ````markdown
 # Project Url 
-🔗 https://kesav424.github.io/accessibility-learning/accordion-pattern/
+
+   https://roadmap.sh/projects/accordion
+
 
 ## Part 1: The `Accordion` Class - Managing a Single Accordion Item
 
