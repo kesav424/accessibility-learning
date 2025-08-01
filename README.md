@@ -9,8 +9,8 @@ This is a basic HTML project. You can clone it and run it locally to view the `i
 ### 📥 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/kesav424/accessibility-learning.git
+cd accessibility-learning
 ```
 
 ### 💻 2. Run Locally Using VS Code
