@@ -2,6 +2,10 @@
 
 This is a basic HTML project. You can clone it and run it locally to view the `index.html` page in your browser.
 
+## Projects Link
+
+Accordion - (https://kesav424.github.io/accessibility-learning/accordion-pattern/)
+
 ---
 
 ## 🚀 Getting Started
