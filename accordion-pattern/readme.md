@@ -1,10 +1,6 @@
 
 
 ````markdown
-# Project Url 
-
-   https://roadmap.sh/projects/accordion
-
 
 ## Part 1: The `Accordion` Class - Managing a Single Accordion Item
 
